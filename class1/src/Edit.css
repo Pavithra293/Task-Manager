@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+
+  font-family:'Inter',sans-serif;
+}
+
+.modal-container{
+    position:fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal{
+    border-radius:5px;
+    background:linear-gradient(to right,rgb(255, 203, 211),rgb(174, 146, 211));
+    width:25em;
+
+}
+.modal .head{
+    box-sizing: border-box;
+    padding:10px;
+    justify-content:space-between;
+    background-color: white;
+    width:100%;
+    
+}
+.modal .btn{
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 130px;
+}
+form{
+    position:relative;
+    box-sizing: border-box;
+}
+.frm-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding:0px 30px;
+  box-sizing: border-box;
+}
+
+.frm-group label{
+    padding-bottom: 7px;
+    font-size: 18px;
+}
+.frm-group input{
+    width:100%;
+}
+.frm-group textarea{
+  width:100%;  
+}
+
+.frm-group input,
+.frm-group textarea,
+.frm-group select{
+    border:1px solid black;
+    border-radius: 5px;
+    padding:7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+.btns button{
+    color:white;
+    background-color: #084d7a;
+     font-size: 14px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+  width: 100%; 
+  justify-content: flex-end; 
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.status{
+    display:flex;
+    align-items: center;
+    gap:30px;
+}
+
+.status input{
+    width:125px;
+    text-align: center;
+    margin-left: 9px;
+}
+
+.lline{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}

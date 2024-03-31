@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+font-family:'Inter',sans-serif;
+}
+
+.mdlc{
+    position:fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.mdl{
+     border-radius:5px;
+    background:linear-gradient(to right,rgb(255, 203, 211),rgb(174, 146, 211));
+    width:25em;
+}
+
+.mdl .head{
+    box-sizing: border-box;
+    padding:10px;
+    justify-content:space-between;
+    background-color: white;
+    width:100%; 
+}
+
+.head h3{
+    background-color: white !important;
+    color:black !important;
+}
+
+.qn {
+    margin:20px;
+}
+
+.qn .ques{
+    font-weight: normal;
+    left:0;
+}
+
+.bt{
+    width:100px;
+    height:25px;
+}
+
+.con{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    margin-left:21px;
+    margin-bottom: 20px;
+}
+
+.confirm{
+    display:flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: center;
+    gap:10px;
+}
+
+.confirm button{
+    background-color: #084d7a;
+    border:none;
+    border-radius:6px;
+    color:white;
+}

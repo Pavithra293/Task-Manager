@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+background: #DE76E0;
+background: linear-gradient(270deg, #DE76E0, #EAA8C6);
+}
+
+.container{
+
+  box-sizing:border-box;
+  padding:40px;
+  justify-content:center;
+  align-items:center;
+}
+
+.head{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:30px;
+}
+
+.main-con{
+  width:100%;
+  border:2px solid white;
+  border-radius:20px;
+  padding:20px;
+   box-sizing:border-box;
+
+}
+.search{
+  display:flex;
+  justify-content: space-between;
+  height:40px;
+  font-size: large;
+}
+
+.fil p{
+  align-self:center;
+}
+
+.fil select{
+  border:none;
+   border-radius: 6px;
+   font-size: 15px;
+}
+
+.fil{
+  display:flex;
+  justify-content:flex-start;
+  gap:10px;
+  align-self:flex;
+}
+
+.fil input{
+  padding:5px;
+  border-radius: 6px;
+  border:none;
+  font-size: 15px;
+}
+
+.ntask button{
+ padding:4px;
+  border-radius: 6px;
+  border:none;
+  width:200px;
+  height:30px;
+  color:white;
+  background-color: #084d7a;
+  height:40px;
+ font-size: 15px;
+}
+
+.sort{
+  display:flex;
+   gap:17px;
+   margin-top:20px;
+   height: 30px;
+   width:100%;
+    height:40px;
+  font-size: large;
+}
+
+.sort p{
+  align-self: center;
+}
+
+.sort select{
+  border:none;
+  border-radius: 6px;
+  height:40px;
+  font-size: 15px;
+}
+
+.task{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top:20px;
+ 
+}
+.task .pending ,
+.task .inprogress,
+.task .completed,
+.task .deployed,
+.task .deffered
+{
+ flex: 1; 
+ margin-right:10px;
+ border-radius:6px;
+ background-color: white;
+ box-sizing: border-box;
+}
+
+.task h3{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color:blue;
+  padding:5px;
+  color:white;
+  text-align:center;
+}
+
+.task .pending h3 {
+  background-color: grey;
+}
+
+.task .inprogress h3{
+  background-color: orange;
+}
+
+.task .completed h3{
+  background-color:#1dc038 ;
+}
+
+.task .deployed h3{
+  background-color: indigo;
+}
+
+.task .deffered h3{
+  background-color: rgb(253, 127, 105);
+}
+
+
+@media screen and (max-width: 1000px) {
+  .task {
+    flex-direction: column;
+  }
+}
