@@ -129,7 +129,7 @@ const App = () => {
             <div className="completed"><h3>Completed</h3>
             {filteredSortedRows
               .map((row, index) => {
-                if(row.status === "Completed") {
+                if(row.status === "completed") {
                   row.btn = "Completed";
                   return <Task key={index} row={row} onDelete={handleDeleteTask} onEdit={handleEditRow}/>;
                 }
@@ -138,7 +138,7 @@ const App = () => {
             <div className="deployed"><h3>Deployed</h3>
             {filteredSortedRows
               .map((row, index) => {
-                if(row.status === "Deployed") {
+                if(row.status === "deployed") {
                   row.btn = "Deployed";
                   return <Task key={index} row={row} onDelete={handleDeleteTask} onEdit={handleEditRow}/>;
                 }
