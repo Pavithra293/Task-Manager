@@ -18,7 +18,7 @@ This is a task manager application built using React. It allows users to manage 
 
 2. Navigate to the project directory:
    ```bash
-   cd Task-Manger
+   cd class1
    ```
 
 3. Install dependencies:
